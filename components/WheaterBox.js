@@ -25,15 +25,17 @@ const styles = StyleSheet.create({
     marginRight: "auto",
   },
   wheaterCard: {
-    backgroundColor: "#002A43",
-    borderRadius: 8,
+    backgroundColor: "rgba(0, 0, 0, 0.40)",
+    borderRadius: 10,
+    borderColor: "#fff",
+    borderWidth: 1,
     flexDirection: "row",
     justifyContent: "center",
     width: 350,
-    padding: 15,
+    padding: 5,
   },
   cardText: {
-    fontSize: 32,
+    fontSize: 24,
     color: "white",
   },
 });

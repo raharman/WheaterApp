@@ -5,6 +5,7 @@ import moment from "moment-timezone";
 
 import DateTimeBox from "./components/DateTimeBox";
 import WheaterBox from "./components/WheaterBox";
+import WheaterScroll from "./components/WheaterScroll";
 
 const API_KEY = "7ffd6bc2f6313407cc66b09a8b053ae7";
 
@@ -34,7 +35,7 @@ export default function App() {
       )
         .then((res) => res.json())
         .then((data) => {
-          console.log(data);
+          /* console.log(data); */
           setData(data);
         });
     }
@@ -80,6 +81,8 @@ export default function App() {
           }
           unit=""
         />
+
+        <WheaterScroll weatherData={data.daily} />
       </ImageBackground>
     </View>
   );
